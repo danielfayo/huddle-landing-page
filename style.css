@@ -1,11 +1,80 @@
 :root {
-    --header-text: font-family: 'Poppins', sans-serif;
-    --body-text: font-family: 'Open Sans', sans-serif;
+    --header-text: 'Poppins', sans-serif;
+    --body-text: 'Open Sans', sans-serif;
     --primary-color: hsl(322, 100%, 66%);
     --pale-cyan: hsl(193, 100%, 96%);
     --dark-cyan: hsl(192, 100%, 9%);
     --grayish-blue: hsl(208, 11%, 55%);
-    --header-bold: font-weight: 600;
-    --body-regular: font-weight: 400;
-    --body-bold: font-weight: 600;
+    --header-bold: 600;
+    --body-regular: 400;
+    --body-bold: 700;
+}
+
+body {
+    border: 1px solid;
+}
+
+h1 {
+    font-family: var(--header-text);
+    font-size: 1.5rem;
+    font-weight: var(--header-bold);
+    color: var(--dark-cyan);
+
+    /* @media screen (min-width: 26.5625em) {
+        
+    } */
+
+    @media screen (min-width: 48em) {
+        font-size: 1.75rem;
+    }
+
+    @media screen (min-width: 64em) {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-family: var(--header-text);
+    font-size: 1.125rem;
+    font-weight: var(--header-bold);
+    color: var(--dark-cyan);
+
+    @media screen (min-width: 48em) {
+        font-size: 1.25rem;
+    }
+
+    @media screen (min-width: 64em) {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-family: var(--header-text);
+    font-size: 1.125rem;
+    font-weight: var(--header-bold);
+    color: var(--dark-cyan);
+
+    @media screen (min-width: 64em) {
+        font-size: 1.25rem;
+    }
+}
+
+/* p {
+    font-family: var(--body-text);
+    font-weight: var(--body-regular);
+    font-size: 1rem;
+} */
+
+.container {
+    padding: 0 1.5rem;
+}
+
+nav {
+    padding: 2.1875rem 0;
+}
+
+.nav-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
