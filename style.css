@@ -1,2 +1,11 @@
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
+:root {
+    --header-text: font-family: 'Poppins', sans-serif;
+    --body-text: font-family: 'Open Sans', sans-serif;
+    --primary-color: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --header-bold: font-weight: 600;
+    --body-regular: font-weight: 400;
+    --body-bold: font-weight: 600;
+}
