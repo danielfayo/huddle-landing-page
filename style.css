@@ -25,18 +25,6 @@ h1 {
     font-size: 1.5rem;
     font-weight: var(--header-bold);
     color: var(--dark-cyan);
-
-    /* @media screen (min-width: 26.5625em) {
-        
-    } */
-
-    @media screen (min-width: 48em) {
-        font-size: 1.75rem;
-    }
-
-    @media screen (min-width: 64em) {
-        font-size: 2rem;
-    }
 }
 
 h2 {
@@ -44,14 +32,6 @@ h2 {
     font-size: 1.125rem;
     font-weight: var(--header-bold);
     color: var(--dark-cyan);
-
-    @media screen (min-width: 48em) {
-        font-size: 1.25rem;
-    }
-
-    @media screen (min-width: 64em) {
-        font-size: 1.5rem;
-    }
 }
 
 h3 {
@@ -59,10 +39,6 @@ h3 {
     font-size: 1.5rem;
     font-weight: var(--header-bold);
     color: var(--dark-cyan);
-
-    @media screen (min-width: 64em) {
-        font-size: 1.25rem;
-    }
 }
 
 p {
@@ -204,7 +180,7 @@ nav {
 }
 
 .banner {
-    padding-top: ;
+    /* padding-top: ; */
     padding: 0 1.5rem;
     position: relative;
 }
@@ -310,4 +286,53 @@ li a {
 .copyright {
     font-family: var(--body-text);
     text-align: center;
+}
+
+@media only screen and (min-width: 26.5625em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* .container {
+        padding: 0 2.5rem;
+    } */
+}
+
+@media only screen and (min-width: 48em) {
+    /* font-size: 1.75rem; */
+}
+
+@media only screen and (min-width: 64em) {
+    /* font-size: 2rem; */
+}
+
+@media only screen and (min-width: 90em) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    .hero-container {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 4rem;
+        
+    }
+
+    .text-content-button {
+        text-align: start;
+    }
+
+    .hero-image img {
+        width: 100%;
+        padding-left: 
+    }
+
+    .hero-image {
+        padding: 0;
+    }
 }
